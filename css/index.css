@@ -1,0 +1,18 @@
+@import url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #f8f9fa;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.font-code {
+    font-family: 'D2Coding', monospace;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
