@@ -93,12 +93,11 @@ function loadMarkdown(filePath) {
       // 트랜지션 클래스 추가
       viewer.classList.add('active');
 
-      // 스크롤 위치: 카드보다 "더 아래로"
-      const cardOffset = activeCard.getBoundingClientRect().top + window.scrollY;
-      const cardHeight = activeCard.offsetHeight;
+      // viewer가 화면에 바로 보이도록 스크롤!
+      const viewerTop = viewer.getBoundingClientRect().top + window.scrollY;
 
       window.scrollTo({
-        top: cardOffset + cardHeight - 100, // 카드 하단 기준, 살짝 위
+        top: viewerTop - 20,
         behavior: 'smooth'
       });
     })
