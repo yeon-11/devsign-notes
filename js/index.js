@@ -96,9 +96,9 @@ function loadMarkdown(filePath) {
       // viewer가 화면에 바로 보이도록 스크롤!
       const viewerTop = viewer.getBoundingClientRect().top + window.scrollY;
 
-      window.scrollTo({
-        top: viewerTop - 20,
-        behavior: 'smooth'
+      viewer.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
       });
     })
     .catch(() => {
