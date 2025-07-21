@@ -1,4 +1,4 @@
-//  탑버튼 기능
+// 탑버튼 기능
 const topBtn = document.getElementById("topBtn");
 
 // 스크롤 시 버튼 보이기/숨기기
@@ -15,7 +15,6 @@ topBtn.addEventListener("click", () => {
 topBtn.style.display = "none";
 
 
-
 // 마크다운 카드 열고닫기
 let activeCard = null;
 
@@ -28,12 +27,17 @@ document.querySelectorAll('.markdown-card').forEach(card => {
 
     // 이미 열린 카드를 다시 클릭한 경우: 닫기
     if (activeCard === card) {
-      viewer.classList.remove('active'); // 트랜지션용
+      viewer.classList.remove('active');
       setTimeout(() => {
         viewer.innerHTML = '';
         activeCard.classList.remove('active');
         activeCard = null;
-      }, 300); // 트랜지션 시간에 맞춤
+
+        // 모든 카드 다시 보이게
+        document.querySelectorAll('.markdown-card').forEach(c => {
+          c.style.display = 'block';
+        });
+      }, 300);
       return;
     }
 
@@ -44,6 +48,12 @@ document.querySelectorAll('.markdown-card').forEach(card => {
 
     activeCard = card;
     card.classList.add('active');
+
+    // 현재 카드만 보이게, 나머지 숨기기
+    document.querySelectorAll('.markdown-card').forEach(c => {
+      c.style.display = c === card ? 'block' : 'none';
+    });
+
     loadMarkdown(`md/${file}`);
   });
 });
@@ -70,6 +80,11 @@ function loadMarkdown(filePath) {
             activeCard.classList.remove('active');
             activeCard = null;
           }
+
+          // 모든 카드 다시 보이게
+          document.querySelectorAll('.markdown-card').forEach(c => {
+            c.style.display = 'block';
+          });
         }, 300);
       });
 
@@ -78,9 +93,12 @@ function loadMarkdown(filePath) {
       // 트랜지션 클래스 추가
       viewer.classList.add('active');
 
-      // 스크롤 이동
+      // 스크롤 위치: 카드보다 "더 아래로"
+      const cardOffset = activeCard.getBoundingClientRect().top + window.scrollY;
+      const cardHeight = activeCard.offsetHeight;
+
       window.scrollTo({
-        top: viewer.offsetTop - 20,
+        top: cardOffset + cardHeight - 100, // 카드 하단 기준, 살짝 위
         behavior: 'smooth'
       });
     })
