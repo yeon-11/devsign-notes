@@ -32,16 +32,11 @@ document.querySelectorAll('.markdown-card').forEach(card => {
         viewer.innerHTML = '';
         activeCard.classList.remove('active');
         activeCard = null;
-
-        // 모든 카드 다시 보이게
-        document.querySelectorAll('.markdown-card').forEach(c => {
-          c.style.display = 'block';
-        });
       }, 300);
       return;
     }
 
-    // 다른 카드 클릭 시 기존 내용 제거
+    // 이전 카드 비활성화
     if (activeCard && activeCard !== card) {
       activeCard.classList.remove('active');
     }
@@ -49,11 +44,7 @@ document.querySelectorAll('.markdown-card').forEach(card => {
     activeCard = card;
     card.classList.add('active');
 
-    // 현재 카드만 보이게, 나머지 숨기기
-    document.querySelectorAll('.markdown-card').forEach(c => {
-      c.style.display = c === card ? 'block' : 'none';
-    });
-
+    // 마크다운 로딩
     loadMarkdown(`md/${file}`);
   });
 });
@@ -80,26 +71,22 @@ function loadMarkdown(filePath) {
             activeCard.classList.remove('active');
             activeCard = null;
           }
-
-          // 모든 카드 다시 보이게
-          document.querySelectorAll('.markdown-card').forEach(c => {
-            c.style.display = 'block';
-          });
         }, 300);
       });
 
       viewer.appendChild(closeBtn);
 
-      // 트랜지션 클래스 추가
+      // 뷰어 보여주기
       viewer.classList.add('active');
 
-      // viewer가 화면에 바로 보이도록 스크롤!
-      const viewerTop = viewer.getBoundingClientRect().top + window.scrollY;
-
-      viewer.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
+      // ✅ 뷰어를 화면 최상단에 스크롤
+      setTimeout(() => {
+        const viewerTop = viewer.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: viewerTop - 20, // 위에 여백 살짝
+          behavior: 'smooth'
+        });
+      }, 30);
     })
     .catch(() => {
       document.getElementById('markdown-viewer').innerHTML =
