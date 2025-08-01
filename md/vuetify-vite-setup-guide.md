@@ -92,4 +92,4 @@ export default defineConfig({
 npm run dev
 ```
 
-> 이미 설치된 Vue 프로젝트에 Vuetify를 추가한 경우엔 `npm run serve`도 가능!
+> 이미 설치된 Vue 프로젝트에 Vuetify를 추가한 경우엔 `npm run serve` 가능!
