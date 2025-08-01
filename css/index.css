@@ -1,0 +1,108 @@
+@import url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff');
+
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #f8f9fa;
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.font-code {
+    font-family: 'D2Coding', monospace;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.accordion {
+    margin-bottom: 40px;
+}
+
+
+/* 탑버튼 */
+#topBtn {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+
+
+/* 마크다운 카드 레이아웃 */
+.markdown-card-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin-bottom: 30px;
+}
+
+
+/* 마크다운 카드 스타일 */
+.markdown-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.markdown-card:hover {
+    transform: translateY(-5px);
+}
+
+.markdown-card.active {
+    background-color: #f0f8ff;
+    border: 2px solid #007bff;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+}
+
+
+/* 마크다운 뷰어 (내용 표시 영역) */
+.markdown-result {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    line-height: 1.7;
+}
+
+
+/* 마크다운 뷰어 트랜지션 효과 */
+#markdown-viewer {
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+}
+
+#markdown-viewer.active {
+    opacity: 1;
+    max-height: 5000px;
+}
+
+
+/* 닫기 버튼 스타일 */
+.markdown-close-btn {
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    display: block;
+}
+
+.markdown-close-btn:hover {
+    background-color: #c62828;
+}

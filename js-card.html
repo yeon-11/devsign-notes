@@ -1,0 +1,154 @@
+<head>
+  <meta charset="UTF-8" />
+  <title>JavaScript 문법 요약 카드</title>
+
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/naver/d2codingfont/d2coding.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/js-card.css">
+</head>
+
+
+<body>
+  <h1>JavaScript 문법 요약 카드</h1>
+
+  <section>
+    <h2><code>()</code>, <code>[]</code>, <code>{}</code> 차이</h2>
+    <ul>
+      <li><code>()</code> : 함수 호출, 우선순위 지정</li>
+      <li><code>[]</code> : 배열 만들기, 인덱스로 접근</li>
+      <li><code>{}</code> : 코드 블록, 객체 생성</li>
+    </ul>
+
+<pre>
+function greet() { return "hello"; }      <span>// {}: 함수 블록</span>
+let arr = [1, 2, 3];                      <span>// []: 배열</span>
+let person = { name: "yeon" };            <span>// {}: 객체</span>
+</pre>
+  </section>
+
+  <section>
+    <h2>변수 선언: <code>let</code>, <code>const</code>, <code>var</code></h2>
+<pre>
+let a = 10;     <span>// 블록 범위, 재할당 가능</span>
+const b = 20;   <span>// 블록 범위, 재할당 불가</span>
+var c = 30;     <span>// 함수 범위, 재선언 가능 (요즘 잘 안 씀)</span>
+</pre>
+
+    <div class="result">a = 10, b = 20, c = 30</div>
+  </section>
+
+  <section>
+    <h2>배열 (Array)</h2>
+<pre>
+let fruits = ["🍎", "🍌", "🍇"];
+console.log(fruits[1]);
+</pre>
+
+    <div class="explanation">배열은 <code>[]</code>로 만들고, 인덱스로 접근해요.</div>
+    <div class="result">🍌</div>
+  </section>
+
+  <section>
+    <h2>조건문: <code>if</code> / <code>else</code></h2>
+<pre>
+let isLoggedIn = true;
+
+if (isLoggedIn) {
+console.log("hello!");
+} else {
+console.log("bye");
+}
+</pre>
+
+    <div class="result">hello!</div>
+    <br>
+
+
+<pre>
+let isLoggedIn = false;
+
+if (isLoggedIn) {
+console.log("hello!");
+} else {
+console.log("bye");
+}
+</pre>
+
+    <div class="result">bye</div>
+  </section>
+
+  <section>
+    <h2>반복문: <code>for</code> / <code>for...of</code> / <code>forEach</code> / <code>map</code></h2>
+<pre>
+let fruits = ["🍎", "🍌", "🍇"];
+</pre>
+
+
+<pre>
+<span>// for: 인덱스를 이용해서 배열을 하나씩 출력</span>
+for (let i = 0; i < fruits.length; i++) {
+console.log(fruits[i]);
+}
+</pre>
+
+    <div class="result">🍎 🍌 🍇</div>
+
+<br>
+<pre>
+<span>// for...of: 배열 값을 하나씩 바로 꺼내서 출력</span>
+for (let fruit of fruits) {
+console.log(fruit);
+}
+</pre>
+
+    <div class="result">🍎 🍌 🍇</div>
+
+<br>
+<pre>
+<span>// forEach(): 배열의 각각에 대해 함수를 실행</span>
+fruits.forEach(function(fruit) {
+console.log(fruit);
+});
+</pre>
+
+    <div class="result">
+      0: 🍎<br>
+      1: 🍌<br>
+      2: 🍇<br>
+    </div>
+
+<br>
+<pre>
+<span>//map(): 배열의 값을 바꿔서 새로운 배열을 만들기</span>
+let upperFruits = fruits.map(fruit => fruit.toUpperCase());
+console.log(upperFruits);
+</pre>
+
+    <div class="result">"🍎", "🍌", "🍇"</div>
+  </section>
+
+  <section>
+    <h2>함수 선언</h2>
+<pre>
+function sayHi(name) {
+return `hello, ${name}`;
+}
+
+console.log(sayHi("js"));
+</pre>
+    <div class="result">hello, js</div>
+  </section>
+
+
+  <section>
+    <h2>문자열 템플릿: <code>${"{값}"}</code></h2>
+<pre>
+let skill = "js";
+console.log(`내가 배우는 기술은 ${skill}야!`);
+</pre>
+
+    <div class="result">내가 배우는 기술은 js야!</div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'D2Coding';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_three@1.0/D2Coding.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Pretendard-Regular';
+  line-height: 1.6;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Pretendard-Regular';
+}
+
+section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 20px;
+  color: #333;
+  border-left: 5px solid #007acc;
+  padding-left: 10px;
+  margin-top: 0;
+  font-family: 'Pretendard-Regular';
+}
+
+code {
+  background: #eef;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'D2Coding', monospace;
+}
+
+pre {
+  background: #f3f3f3;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: 'D2Coding', monospace;
+}
+
+span {
+  font-size: 16px;
+  color: #666;
+  font-family: 'Pretendard-Regular';
+}
+
+.explanation {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #666;
+}
+
+.result {
+  background: #e0ffe1;
+  padding: 5px;
+  border-left: 4px solid #4caf50;
+  margin-top: 6px;
+  font-family: 'D2Coding', monospace;
+}
