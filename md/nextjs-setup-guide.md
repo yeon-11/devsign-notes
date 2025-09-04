@@ -15,28 +15,28 @@ npx create-next-app@latest
 아래 질문들에 순서대로 답하세요:
 
 1. **What is your project named?**  
-   👉 원하는 프로젝트 이름 입력 (예: `프로젝트명`)
+   원하는 프로젝트 이름 입력 (예: `프로젝트명`)
 
 2. **Would you like to use TypeScript?**  
-   👉 `No (n)` 선택
+   `No (n)` 선택
 
 3. **Would you like to use ESLint?**  
-   👉 `No (n)` 선택
+ `No (n)` 선택
 
 4. **Would you like to use Tailwind CSS?**  
-   👉 `No (n)` 선택
+   `No (n)` 선택
 
 5. **Would you like to use `src/` directory?**  
-   👉 `Yes (y)` 선택
+   `Yes (y)` 선택
 
 6. **Would you like to use App Router (recommended)?**  
-   👉 `Yes (y)` 선택
+   `Yes (y)` 선택
 
 7. **Would you like to customize the default import alias (`@/*`)?**  
-   👉 `Yes (y)` 선택
+   `Yes (y)` 선택
 
 8. **What import alias would you like configured?**  
-   👉 그냥 `Enter` 눌러 기본값 `@/*` 사용
+   그냥 `Enter` 눌러 기본값 `@/*` 사용
 
 ---
 

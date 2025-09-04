@@ -135,4 +135,4 @@ class MyHomePage extends StatelessWidget {
 
 - 만약 다시 `Flutter: New Project` 할 때도 다운로드하라고 뜨면  
   → [Flutter 설치 페이지](https://docs.flutter.dev/get-started/install)에서  
-  **"Download" → "Install"** 단계 다시 체크!
+  `Download` → `Install` 단계 다시 체크!

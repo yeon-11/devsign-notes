@@ -47,5 +47,5 @@
 
 - Dart 실행 시 `main()` 함수 필요!
 - `void main() { print('Hello, Dart!'); }` 로 테스트 가능
-- IntelliJ에서 Run 버튼으로 실행도 가능
+- `IntelliJ`에서 `Run` 버튼으로 실행도 가능
 - 자동완성, 디버깅 기능 매우 훌륭함
