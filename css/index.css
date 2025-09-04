@@ -4,7 +4,7 @@ body {
     font-family: 'Pretendard', sans-serif;
     background-color: #f8f9fa;
     padding: 40px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -20,19 +20,6 @@ h1 {
 .accordion {
     margin-bottom: 40px;
 }
-
-
-/* 탑버튼 */
-#topBtn {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-}
-
 
 
 
@@ -73,20 +60,6 @@ h1 {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     line-height: 1.7;
-}
-
-
-/* 마크다운 뷰어 트랜지션 효과 */
-#markdown-viewer {
-    transition: opacity 0.4s ease, max-height 0.4s ease;
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-}
-
-#markdown-viewer.active {
-    opacity: 1;
-    max-height: 5000px;
 }
 
 
