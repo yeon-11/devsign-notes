@@ -122,14 +122,6 @@ window.addEventListener("scroll", () => {
 });
 
 // 버튼 클릭
-topButton.addEventListener("mousedown", () => {
-  topIcon.classList.remove("text-secondary");
-  topIcon.classList.add("text-primary");
-});
-
-// 색상 복구
-topButton.addEventListener("mouseup", () => {
-  topIcon.classList.remove("text-primary");
-  topIcon.classList.add("text-secondary");
+topButton.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
