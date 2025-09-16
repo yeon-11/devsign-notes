@@ -39,6 +39,25 @@
                 <h2 class="h4 mt-5 mb-3">📄 가이드 문서</h2>
                 <div class="row" id="markdown-cards"></div>
         </div>
+        
+
+        <!-- html 모달 -->
+        <div class="modal fade" id="htmlModal" tabindex="-1">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                                <div class="modal-header">
+                                        <h5 class="modal-title" id="htmlModalLabel">문서 보기</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="close"></button>
+                                </div>
+                                <div class="modal-body p-0">
+                                        <iframe id="html-viewer" src="" width="100%" height="600px"
+                                                style="border:0;"></iframe>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
 
         <!-- 마크다운 모달 -->
         <div class="modal fade" id="markdownModal" tabindex="-1">
