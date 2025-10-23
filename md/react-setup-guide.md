@@ -1,4 +1,4 @@
-# ⚛️ React + Vite 프로젝트 셋업 가이드
+# React + Vite 프로젝트 셋업 가이드
 
 **1. React 프로젝트 생성**
 
@@ -29,13 +29,13 @@ Install dependencies with npm? → `Yes`
 
 ---
 
-**🚀 결과 확인**
+**결과 확인**
 
 cd `프로젝트명`
 
 `npm run dev`
 
-> 🌐 접속: `http://localhost:5173`
+> 접속: `http://localhost:5173`
 
 ```
 

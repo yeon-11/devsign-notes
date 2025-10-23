@@ -1,265 +1,389 @@
 <div class="accordion-item">
-    <h2 class="accordion-header" id="headingHtml">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#collapseHtml" aria-expanded="false" aria-controls="collapseHtml">
-            HTML
-        </button>
-    </h2>
-    <div id="collapseHtml" class="accordion-collapse collapse" aria-labelledby="headingHtml"
-        data-bs-parent="#shortcutAccordion">
-        <div class="accordion-body">
-            <ul class="list-group mb-4">
-                <li class="list-group-item">한줄 띄우고 줄바꿈 <span
-                        class="badge bg-secondary text-light font-code mx-1">p</span>
-                </li>
-                <li class="list-group-item">줄바꿈 <span class="badge bg-warning text-dark font-code mx-1">br 2번
-                        =
-                        p 1번</span><span class="badge bg-secondary text-light font-code mx-1">br</span>
-                </li>
-                <li class="list-group-item">띄어쓰기 <span class="badge bg-secondary text-light font-code mx-1">&
-                        nbsp;</span></li>
-                <li class="list-group-item">© <span class="badge bg-secondary text-light font-code mx-1">&
-                        copy;</span></li>
-                <li class="list-group-item">® <span class="badge bg-secondary text-light font-code mx-1">&
-                        reg;</span></li>
-                <li class="list-group-item">" <span class="badge bg-secondary text-light font-code mx-1">&
-                        quot;</span></li>
-                <li class="list-group-item">
-                    < <span class="badge bg-secondary text-light font-code mx-1">&
-                        lt;</span>
-                </li>
-                <li class="list-group-item">> <span class="badge bg-secondary text-light font-code mx-1">&
-                        gt;</span></li>
-                <li class="list-group-item">& <span class="badge bg-secondary text-light font-code mx-1">&
-                        amp;</span></li>
-                <li class="list-group-item">' <span class="badge bg-secondary text-light font-code mx-1">&
-                        apos;</span></li>
-                <li class="list-group-item">제목
-                    <span class="badge bg-secondary text-light font-code mx-1">h1</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">h2</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">h3</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">h4</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">h5</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">h6</span>
-                </li>
-                <li class="list-group-item">그룹 <span class="badge bg-warning text-dark font-code mx-1">4방식</span><span
-                        class="badge bg-secondary text-light font-code mx-1">div</span>
-                </li>
-                <li class="list-group-item">글자 굵게 <span
-                        class="badge bg-secondary text-light font-code mx-1">b</span><span
-                        class="badge bg-secondary text-light font-code mx-1">strong</span>
-                </li>
-                <li class="list-group-item">글자 기울게 <span
-                        class="badge bg-secondary text-light font-code mx-1">i</span><span
-                        class="badge bg-secondary text-light font-code mx-1">em</span>
-                </li>
-                <li class="list-group-item">글자 밑줄 <span
-                        class="badge bg-secondary text-light font-code mx-1">u</span><span
-                        class="badge bg-secondary text-light font-code mx-1">ins</span>
-                </li>
-                <li class="list-group-item">글자 취소선 <span
-                        class="badge bg-secondary text-light font-code mx-1">s</span><span
-                        class="badge bg-secondary text-light font-code mx-1">del</span>
-                </li>
-                <li class="list-group-item">형광 표시 <span class="badge bg-secondary text-light font-code mx-1">mark</span>
-                </li>
-                <li class="list-group-item">글자 한단계 작게 <span
-                        class="badge bg-secondary text-light font-code mx-1">small</span>
-                </li>
-                <li class="list-group-item">글자 한단계 크게 <span
-                        class="badge bg-secondary text-light font-code mx-1">big</span>
-                </li>
-                <li class="list-group-item">아래 첨자 <span class="badge bg-secondary text-light font-code mx-1">sub</span>
-                </li>
-                <li class="list-group-item">위 첨자 <span class="badge bg-secondary text-light font-code mx-1">sup</span>
-                </li>
-                <li class="list-group-item">주석 <span class="badge bg-secondary text-light font-code mx-1">rt</span>
-                </li>
-                <li class="list-group-item">수평선 라인 <span class="badge bg-secondary text-light font-code mx-1">hr</span>
-                </li>
-                <li class="list-group-item">이미지 삽입 <span class="badge bg-secondary text-light font-code mx-1">img
-                        src</span></li>
-                <li class="list-group-item">현재 경로 <span class="badge bg-secondary text-light font-code mx-1">./</span>
-                </li>
-                <li class="list-group-item">이전 경로 <span class="badge bg-secondary text-light font-code mx-1">../</span>
-                </li>
-                <li class="list-group-item">링크 걸기 <span class="badge bg-secondary text-light font-code mx-1">a</span>
-                </li>
-                <li class="list-group-item">연결할 링크 지정 <span
-                        class="badge bg-secondary text-light font-code mx-1">href</span>
-                </li>
-                <li class="list-group-item">임시 링크 <span class="badge bg-secondary text-light font-code mx-1">#</span>
-                </li>
-                <li class="list-group-item">풍선 도움말 <span
-                        class="badge bg-secondary text-light font-code mx-1">title</span>
-                </li>
-                <li class="list-group-item">새창, 창설정 <span
-                        class="badge bg-secondary text-light font-code mx-1">target</span>
-                </li>
-                <li class="list-group-item">새로운 창에 생성 <span
-                        class="badge bg-secondary text-light font-code mx-1">_blank</span>
-                </li>
-                <li class="list-group-item">현재 창에 생성 <span
-                        class="badge bg-secondary text-light font-code mx-1">_self</span>
-                </li>
-                <li class="list-group-item">퍼센트 치수 <span class="badge bg-secondary text-light font-code mx-1">meter
-                        value="숫자"</span></li>
-                <li class="list-group-item">주석 <span class="badge bg-success text-light font-code">ctrl +
-                        /</span> <span class="badge bg-secondary text-light font-code mx-1">&lt;!--</span>
-                </li>
-                <li class="list-group-item">순서 있는 리스트 <span
-                        class="badge bg-secondary text-light font-code mx-1">ol</span>
-                </li>
-                <li class="list-group-item">순서 없는 리스트 <span
-                        class="badge bg-secondary text-light font-code mx-1">ul</span>
-                </li>
-                <li class="list-group-item">사전식 리스트 <span class="badge bg-secondary text-light font-code mx-1">dl</span>
-                </li>
-                <li class="list-group-item">항목에 대한 제목 <span
-                        class="badge bg-secondary text-light font-code mx-1">dt</span>
-                </li>
-                <li class="list-group-item">항목에 대한 내용 <span
-                        class="badge bg-secondary text-light font-code mx-1">dd</span>
-                </li>
-                <li class="list-group-item">일회용 그룹 <span
-                        class="badge bg-secondary text-light font-code mx-1">id="이름"</span>
-                </li>
-                <li class="list-group-item">재사용 그룹 <span
-                        class="badge bg-secondary text-light font-code mx-1">class="이름"</span>
-                </li>
-                <li class="list-group-item">버튼 <span class="badge bg-secondary text-light font-code mx-1">button</span>
-                </li>
-                <li class="list-group-item">커서 모양 <span
-                        class="badge bg-secondary text-light font-code mx-1">cursor</span>
-                </li>
-                <li class="list-group-item">비디오 삽입
-                    <span class="badge bg-secondary text-light font-code mx-1">video
-                        src="경로"</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">autoplay</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">controls</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">loop</span>
-                </li>
-                <li class="list-group-item">줄 합치기 <span
-                        class="badge bg-secondary text-light font-code mx-1">colspan</span>
-                </li>
-                <li class="list-group-item">칸 합치기 <span
-                        class="badge bg-secondary text-light font-code mx-1">rowspan</span>
-                </li>
-                <li class="list-group-item">셀 사이의 여백 <span
-                        class="badge bg-secondary text-light font-code mx-1">cellspacing</span>
-                </li>
-                <li class="list-group-item">텍스트와 셀 사이의 여백 <span
-                        class="badge bg-secondary text-light font-code mx-1">cellpadding</span>
-                </li>
-                <li class="list-group-item">폼 영역 시작 <span
-                        class="badge bg-secondary text-light font-code mx-1">form</span>
-                </li>
-                <li class="list-group-item">입력창 <span class="badge bg-warning text-dark font-code">속성
-                        다양함</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">input</span>
-                </li>
-                <li class="list-group-item">텍스트 입력 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="text"</span></li>
-                <li class="list-group-item">비밀번호 입력 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="password"</span></li>
-                <li class="list-group-item">이메일 입력 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="email"</span></li>
-                <li class="list-group-item">숫자 입력 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="number"</span></li>
-                <li class="list-group-item">전화번호 입력 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="tel"</span></li>
-                <li class="list-group-item">URL 입력 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="url"</span></li>
-                <li class="list-group-item">검색창 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="search"</span></li>
-                <li class="list-group-item">날짜 선택 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="date"</span></li>
-                <li class="list-group-item">시간 선택 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="time"</span></li>
-                <li class="list-group-item">날짜 + 시간 선택 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="datetime-local"</span>
-                </li>
-                <li class="list-group-item">월 선택 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="month"</span></li>
-                <li class="list-group-item">주 선택 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="week"</span></li>
-                <li class="list-group-item">파일 업로드 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="file"</span></li>
-                <li class="list-group-item">체크박스 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="checkbox"</span></li>
-                <li class="list-group-item">라디오 버튼 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="radio"</span></li>
-                <li class="list-group-item">버튼 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="button"</span></li>
-                <li class="list-group-item">리셋 버튼 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="reset"</span></li>
-                <li class="list-group-item">전송 버튼 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="submit"</span></li>
-                <li class="list-group-item">숨겨진 입력값 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="hidden"</span></li>
-                <li class="list-group-item">색상 선택 <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="color"</span></li>
-                <li class="list-group-item">슬라이더 <span class="badge bg-warning text-dark font-code">범위지정</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">input
-                        type="range"</span>
-                </li>
-                <li class="list-group-item">텍스트 영역 <span
-                        class="badge bg-secondary text-light font-code mx-1">textarea</span>
-                </li>
-                <li class="list-group-item">라벨 <span class="badge bg-secondary text-light font-code mx-1">label</span>
-                </li>
-                <li class="list-group-item">전송 버튼 <span class="badge bg-secondary text-light font-code mx-1">button
-                        type="submit"</span></li>
-                <li class="list-group-item">데이터 테이블 시작 <span
-                        class="badge bg-secondary text-light font-code mx-1">table</span>
-                </li>
-                <li class="list-group-item">테이블 구조 구성
-                    <span class="badge bg-secondary text-light font-code mx-1">thead</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">tbody</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">tr</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">th</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">td</span>
-                </li>
-                <li class="list-group-item">이미지 설명 <span class="badge bg-secondary text-light font-code mx-1">alt</span>
-                </li>
-                <li class="list-group-item">미리 정의된 텍스트 <span
-                        class="badge bg-secondary text-light font-code mx-1">pre</span>
-                </li>
-                <li class="list-group-item">코드 표시 <span class="badge bg-secondary text-light font-code mx-1">code</span>
-                </li>
-                <li class="list-group-item">외부 페이지 삽입 <span
-                        class="badge bg-secondary text-light font-code mx-1">iframe</span>
-                </li>
-                <li class="list-group-item">외부 스타일 연결 <span
-                        class="badge bg-secondary text-light font-code mx-1">link</span>
-                </li>
-                <li class="list-group-item">외부 스크립트 연결 <span
-                        class="badge bg-secondary text-light font-code mx-1">script</span>
-                </li>
-                <li class="list-group-item">섹션 구분 태그
-                    <span class="badge bg-secondary text-light font-code mx-1">section</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">article</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">aside</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">nav</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">main</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">header</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">footer</span>
-                </li>
-                <li class="list-group-item">숨김 콘텐츠 <span
-                        class="badge bg-secondary text-light font-code mx-1">hidden</span>
-                </li>
-                <li class="list-group-item">토글 가능한 콘텐츠
-                    <span class="badge bg-secondary text-light font-code mx-1">details</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">summary</span>
-                </li>
-                <li class="list-group-item">이벤트 핸들러 속성
-                    <span class="badge bg-secondary text-light font-code mx-1">onclick</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">onchange</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">oninput</span>
-                    <span class="badge bg-secondary text-light font-code mx-1">onsubmit</span>
-                </li>
-            </ul>
+        <h2 class="accordion-header" id="headingHtml">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseHtml" aria-expanded="false" aria-controls="collapseHtml">
+                        HTML
+                </button>
+        </h2>
+        <div id="collapseHtml" class="accordion-collapse collapse" aria-labelledby="headingHtml"
+                data-bs-parent="#shortcutAccordion">
+                <div class="accordion-body">
+                        <ul class="list-group mb-4">
 
+                                <!-- ===================== TEXT BLOCKS / LINE BREAKS / ENTITIES ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">TEXT BLOCKS / LINE BREAKS / ENTITIES
+                                </li>
+                                <li class="list-group-item">한줄 띄우고 줄바꿈
+                                        <span class="badge bg-secondary text-light font-code mx-1">p</span>
+                                </li>
+                                <li class="list-group-item">줄바꿈
+                                        <span class="badge bg-warning text-dark font-code mx-1">br 2번 = p 1번</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">br</span>
+                                </li>
+                                <li class="list-group-item">띄어쓰기(공백)
+                                        <span class="badge bg-secondary text-light font-code mx-1">& nbsp;</span>
+                                </li>
+                                <li class="list-group-item">"
+                                        <span class="badge bg-secondary text-light font-code mx-1">& quot;</span>
+                                </li>
+                                <li class="list-group-item">'
+                                        <span class="badge bg-secondary text-light font-code mx-1">& apos;</span>
+                                </li>
+                                <li class="list-group-item">&lt;
+                                        <span class="badge bg-secondary text-light font-code mx-1">& lt;</span>
+                                </li>
+                                <li class="list-group-item">&gt;
+                                        <span class="badge bg-secondary text-light font-code mx-1">& gt;</span>
+                                </li>
+                                <li class="list-group-item">&amp;
+                                        <span class="badge bg-secondary text-light font-code mx-1">& amp;</span>
+                                </li>
+                                <li class="list-group-item">©
+                                        <span class="badge bg-secondary text-light font-code mx-1">& copy;</span>
+                                </li>
+                                <li class="list-group-item">®
+                                        <span class="badge bg-secondary text-light font-code mx-1">& reg;</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== INLINE TEXT STYLES ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">INLINE TEXT STYLES</li>
+                                <li class="list-group-item">글자 굵게
+                                        <span class="badge bg-secondary text-light font-code mx-1">b</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">strong</span>
+                                </li>
+                                <li class="list-group-item">글자 기울게
+                                        <span class="badge bg-secondary text-light font-code mx-1">i</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">em</span>
+                                </li>
+                                <li class="list-group-item">글자 밑줄
+                                        <span class="badge bg-secondary text-light font-code mx-1">u</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">ins</span>
+                                </li>
+                                <li class="list-group-item">글자 취소선
+                                        <span class="badge bg-secondary text-light font-code mx-1">s</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">del</span>
+                                </li>
+                                <li class="list-group-item">형광 표시
+                                        <span class="badge bg-secondary text-light font-code mx-1">mark</span>
+                                </li>
+                                <li class="list-group-item">글자 한단계 작게
+                                        <span class="badge bg-secondary text-light font-code mx-1">small</span>
+                                </li>
+                                <li class="list-group-item">글자 한단계 크게
+                                        <span class="badge bg-secondary text-light font-code mx-1">big</span>
+                                </li>
+                                <li class="list-group-item">아래 첨자
+                                        <span class="badge bg-secondary text-light font-code mx-1">sup</span>
+                                </li>
+                                <li class="list-group-item">위 첨자
+                                        <span class="badge bg-secondary text-light font-code mx-1">sub</span>
+                                </li>
+                                <li class="list-group-item">코드 표시 / 미리 정의 텍스트
+                                        <span class="badge bg-secondary text-light font-code mx-1">code</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">pre</span>
+                                </li>
+                                <li class="list-group-item">루비 주석 텍스트
+                                        <span class="badge bg-warning text-dark font-code mx-1">한자 발음</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">rt</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== DOCUMENT STRUCTURE / SECTIONS ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">DOCUMENT STRUCTURE / SECTIONS</li>
+                                <li class="list-group-item">제목
+                                        <span class="badge bg-secondary text-light font-code mx-1">h1</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">h2</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">h3</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">h4</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">h5</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">h6</span>
+                                </li>
+                                <li class="list-group-item">그룹(블록)
+                                        <span class="badge bg-warning text-dark font-code mx-1">4방식</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">div</span>
+                                </li>
+                                <li class="list-group-item">섹션 구분 태그
+                                        <span class="badge bg-secondary text-light font-code mx-1">section</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">article</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">aside</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">nav</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">main</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">header</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">footer</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== LINKS & PATHS ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">LINKS & PATHS</li>
+                                <li class="list-group-item">링크 걸기
+                                        <span class="badge bg-secondary text-light font-code mx-1">a</span>
+                                </li>
+                                <li class="list-group-item">연결할 링크 지정
+                                        <span class="badge bg-secondary text-light font-code mx-1">href</span>
+                                </li>
+                                <li class="list-group-item">임시 링크
+                                        <span class="badge bg-secondary text-light font-code mx-1">#</span>
+                                </li>
+                                <li class="list-group-item">풍선 도움말
+                                        <span class="badge bg-secondary text-light font-code mx-1">title</span>
+                                </li>
+                                <li class="list-group-item">새창 / 창설정
+                                        <span class="badge bg-secondary text-light font-code mx-1">target</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">_blank</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">_self</span>
+                                </li>
+                                <li class="list-group-item">현재 경로
+                                        <span class="badge bg-secondary text-light font-code mx-1">./</span>
+                                </li>
+                                <li class="list-group-item">이전 경로
+                                        <span class="badge bg-secondary text-light font-code mx-1">../</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== MEDIA & EMBED ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">MEDIA & EMBED</li>
+                                <li class="list-group-item">이미지 삽입
+                                        <span class="badge bg-secondary text-light font-code mx-1">img src</span>
+                                </li>
+                                <li class="list-group-item">이미지 설명
+                                        <span class="badge bg-warning text-dark font-code mx-1">대체텍스트</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">alt</span>
+                                </li>
+                                <li class="list-group-item">비디오 삽입
+                                        <span class="badge bg-secondary text-light font-code mx-1">video src="경로"</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">autoplay</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">controls</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">loop</span>
+                                </li>
+                                <li class="list-group-item">외부 페이지 삽입
+                                        <span class="badge bg-secondary text-light font-code mx-1">iframe</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== LIST ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">LIST</li>
+                                <li class="list-group-item">순서 있는 리스트
+                                        <span class="badge bg-secondary text-light font-code mx-1">ol</span>
+                                </li>
+                                <li class="list-group-item">순서 없는 리스트
+                                        <span class="badge bg-secondary text-light font-code mx-1">ul</span>
+                                </li>
+                                <li class="list-group-item">사전식 리스트
+                                        <span class="badge bg-secondary text-light font-code mx-1">dl</span>
+                                </li>
+                                <li class="list-group-item">항목 제목
+                                        <span class="badge bg-secondary text-light font-code mx-1">dt</span>
+                                </li>
+                                <li class="list-group-item">항목 내용
+                                        <span class="badge bg-secondary text-light font-code mx-1">dd</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== TABLE ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">TABLE</li>
+                                <li class="list-group-item">데이터 테이블 시작
+                                        <span class="badge bg-secondary text-light font-code mx-1">table</span>
+                                </li>
+                                <li class="list-group-item">테이블 구조 구성
+                                        <span class="badge bg-secondary text-light font-code mx-1">thead</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">tbody</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">tr</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">th</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">td</span>
+                                </li>
+                                <li class="list-group-item">줄 합치기
+                                        <span class="badge bg-secondary text-light font-code mx-1">colspan</span>
+                                </li>
+                                <li class="list-group-item">칸 합치기
+                                        <span class="badge bg-secondary text-light font-code mx-1">rowspan</span>
+                                </li>
+                                <li class="list-group-item">셀 사이 간격
+                                        <span class="badge bg-success text-light font-code mx-1">css:
+                                                border-spacing</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">cellspacing</span>
+                                </li>
+                                <li class="list-group-item">셀 안쪽 여백
+                                        <span class="badge bg-success text-light font-code mx-1">css: padding</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">cellpadding</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== FORM ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">FORM</li>
+                                <li class="list-group-item">폼 영역 시작
+                                        <span class="badge bg-secondary text-light font-code mx-1">form</span>
+                                </li>
+                                <li class="list-group-item">라벨
+                                        <span class="badge bg-secondary text-light font-code mx-1">label</span>
+                                </li>
+                                <li class="list-group-item">텍스트 영역
+                                        <span class="badge bg-secondary text-light font-code mx-1">textarea</span>
+                                </li>
+                                <li class="list-group-item">입력창
+                                        <span class="badge bg-secondary text-light font-code mx-1">input</span>
+                                </li>
+                                <li class="list-group-item">텍스트
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="text"</span>
+                                </li>
+                                <li class="list-group-item">비밀번호
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="password"</span>
+                                </li>
+                                <li class="list-group-item">이메일
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="email"</span>
+                                </li>
+                                <li class="list-group-item">숫자
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="number"</span>
+                                </li>
+                                <li class="list-group-item">전화
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="tel"</span>
+                                </li>
+                                <li class="list-group-item">URL
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="url"</span>
+                                </li>
+                                <li class="list-group-item">검색
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="search"</span>
+                                </li>
+                                <li class="list-group-item">날짜
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="date"</span>
+                                </li>
+                                <li class="list-group-item">시간
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="time"</span>
+                                </li>
+                                <li class="list-group-item">월
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="month"</span>
+                                </li>
+                                <li class="list-group-item">주
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="week"</span>
+                                </li>
+                                <li class="list-group-item">파일
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="file"</span>
+                                </li>
+                                <li class="list-group-item">체크 박스
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="checkbox"</span>
+                                </li>
+                                <li class="list-group-item">둥근 체크
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="radio"</span>
+                                </li>
+                                <li class="list-group-item">버튼
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="button"</span>
+                                </li>
+                                <li class="list-group-item">리셋
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="reset"</span>
+                                </li>
+                                <li class="list-group-item">전송
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="submit"</span>
+                                </li>
+                                <li class="list-group-item">숨겨진 값
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="hidden"</span>
+                                </li>
+                                <li class="list-group-item">색
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="color"</span>
+                                </li>
+                                <li class="list-group-item">슬라이더
+                                        <span class="badge bg-warning text-dark font-code">범위지정</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">input
+                                                type="range"</span>
+                                </li>
+                                <li class="list-group-item">버튼(요소)
+                                        <span class="badge bg-secondary text-light font-code mx-1">button</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">button
+                                                type="submit"</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== STATUS / INDICATORS ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">STATUS / INDICATORS</li>
+                                <li class="list-group-item">퍼센트 게이지
+                                        <span class="badge bg-secondary text-light font-code mx-1">meter
+                                                value="숫자"</span>
+                                </li>
+                                <li class="list-group-item">진행 상태 표시
+                                        <span class="badge bg-secondary text-light font-code mx-1">progress value="현재"</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">max="전체"</span>
+                                </li>
+                                <li class="list-group-item">읽기 전용 / 비활성화
+                                        <span class="badge bg-secondary text-light font-code mx-1">readonly</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">disabled</span>
+                                </li>
+                                <li class="list-group-item">활성 상태 스타일
+                                        <span class="badge bg-secondary text-light font-code mx-1">:active</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">:focus</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">:checked</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== RESOURCES & SCRIPTS ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">RESOURCES & SCRIPTS</li>
+                                <li class="list-group-item">외부 스타일 연결
+                                        <span class="badge bg-secondary text-light font-code mx-1">link</span>
+                                </li>
+                                <li class="list-group-item">외부 스크립트 연결
+                                        <span class="badge bg-secondary text-light font-code mx-1">script</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== TOGGLE / HIDDEN & ATTRIBUTE GROUPS ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">TOGGLE / HIDDEN & ATTRIBUTE GROUPS</li>
+                                <li class="list-group-item">토글 가능한 콘텐츠
+                                        <span class="badge bg-secondary text-light font-code mx-1">details</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">summary</span>
+                                </li>
+                                <li class="list-group-item">숨김 콘텐츠
+                                        <span class="badge bg-secondary text-light font-code mx-1">hidden</span>
+                                </li>
+                                <li class="list-group-item">일회용 그룹
+                                        <span class="badge bg-secondary text-light font-code mx-1">id="이름"</span>
+                                </li>
+                                <li class="list-group-item">재사용 그룹
+                                        <span class="badge bg-secondary text-light font-code mx-1">class="이름"</span>
+                                </li>
+                                <li class="list-group-item">이벤트 핸들러 속성
+                                        <span class="badge bg-secondary text-light font-code mx-1">onclick</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">onchange</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">oninput</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">onsubmit</span>
+                                </li>
+
+                                <hr>
+
+                                <!-- ===================== COMMENTS ===================== -->
+                                <li class="list-group-item bg-light fw-semibold">COMMENTS</li>
+                                <li class="list-group-item">HTML 주석
+                                        <span class="badge bg-success text-light font-code">ctrl + /</span>
+                                        <span class="badge bg-secondary text-light font-code mx-1">&lt;!-- --&gt;</span>
+                                </li>
+
+                        </ul>
+                </div>
         </div>
-    </div>
 </div>

@@ -1,9 +1,9 @@
-# 🛠️ IntelliJ IDEA로 Dart 개발환경 세팅 가이드
+# IntelliJ IDEA로 Dart 개발환경 세팅 가이드
 
 **1. IntelliJ IDEA 설치**
 
-👉 [공식 다운로드 페이지](https://www.jetbrains.com/ko-kr/idea/download/?section=windows) 접속  
-👉 하단의 **Community Edition** 에서 다운로드 후 실행
+[공식 다운로드 페이지](https://www.jetbrains.com/ko-kr/idea/download/?section=windows) 접속  
+하단의 **Community Edition** 에서 다운로드 후 실행
 
 설치 중 옵션은 모두 체크:
 - 바탕화면 아이콘 생성
@@ -19,7 +19,7 @@
 검색창에 `Dart` 입력 → **설치**  
 > 설치 후 재시작 필요할 수 있음
 
-⚠️ Flutter도 개발할 경우 `Flutter` 플러그인도 설치!
+Flutter도 개발할 경우 `Flutter` 플러그인도 설치!
 
 ---
 
@@ -29,9 +29,9 @@
 다음 항목들 설정:
 
 - `Editor > General > Mouse Control`  
-  👉 `Change font size with Ctrl + Mouse Wheel` 체크 여부 확인
+  → `Change font size with Ctrl + Mouse Wheel` 체크 여부 확인
 - `Editor > General > Editor Tabs`  
-  👉 `Active editor only` 설정 여부 확인
+  → `Active editor only` 설정 여부 확인
 
 ---
 
@@ -43,7 +43,7 @@
 
 ---
 
-## ✅ TIP
+## TIP
 
 - Dart 실행 시 `main()` 함수 필요!
 - `void main() { print('Hello, Dart!'); }` 로 테스트 가능

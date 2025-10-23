@@ -39,6 +39,7 @@ async function loadSectionsParallel() {
 
 loadSectionsParallel();
 
+
 //  마크다운 카드 데이터
 const guides = [
   {
@@ -177,14 +178,15 @@ document.addEventListener("click", (e) => {
   openHtmlModal({ file, title });
 });
 
-//  탑 버튼 기능
+
+// 탑 버튼 기능
 const topButton = document.createElement("button");
 topButton.className = "btn position-fixed border-0 bg-transparent";
 topButton.style.bottom = "20px";
 topButton.style.right = "20px";
 topButton.style.display = "none";
-topButton.style.zIndex = "1050";
-topButton.innerHTML = `<i id="topIcon" class="bi bi-arrow-up-circle-fill fs-1 text-secondary"></i>`;
+topButton.style.zIndex = "500";
+topButton.innerHTML = `<i id="topIcon" class="bi bi-arrow-up-circle-fill fs-1 text-dark"></i>`;
 document.body.appendChild(topButton);
 
 const topIcon = document.getElementById("topIcon");

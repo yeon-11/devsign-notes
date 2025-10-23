@@ -1,4 +1,4 @@
-# ✨ Git + GitHub Pages 배포 매뉴얼 (Vite 기준)
+# Git + GitHub Pages 배포 매뉴얼 (Vite 기준)
 
 
 **1. Git 설치 옵션 (설치 시 선택 사항)**
@@ -54,7 +54,7 @@ git init
 npm run build
 ```
 
-👉 `docs/` 폴더가 생성되어야 GitHub Pages 배포 가능!
+`docs/` 폴더가 생성되어야 GitHub Pages 배포 가능!
 
 ---
 
@@ -81,6 +81,7 @@ git remote add origin https://github.com/깃허브아이디/레포지토리이�
 ```bash
 git push -u origin main
 ```
+강제 푸시  `git push -u origin main --force` 
 
 ---
 
@@ -114,20 +115,20 @@ git push
 
 ---
 
-**📝 안전하게 병합해서 Push 하기 (추천)**
+**안전하게 병합해서 Push 하기 (추천)**
 
 ```bash
 git pull origin main --rebase
 git push -u origin main
 ```
 
-**📌 설명**
+**설명**
 - `git pull origin main --rebase`  
   → 원격 저장소의 커밋을 **내 커밋 뒤로 이어붙이기**  
 - `git push -u origin main`  
   → 정상적으로 병합 후 푸시
 
-**⚠️ 충돌 발생 시**
+**충돌 발생 시**
 1. 충돌난 파일 수정
 2. 아래 명령어로 계속 진행
 ```bash
@@ -137,11 +138,10 @@ git rebase --continue
 
 ---
 
-**📝 참고 명령어 모음**
+**참고 명령어 모음**
 
 * 원격 저장소 확인  `git remote -v` 
 * 원격 저장소 변경  `git remote set-url origin https://github.com/아이디/레포지토리이름.git`
-* 강제 푸시  `git push -u origin main --force` 
 * git 초기화 `rm -rf .git`
 * dist/docs 삭제  `rm -rf dist docs`
 * master → main 변경 `git branch -m master main`

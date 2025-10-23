@@ -1,4 +1,4 @@
-# 🛠️ VSCode에서 Flutter 프로젝트 시작하기
+# VSCode에서 Flutter 프로젝트 시작하기
 
 **1. Flutter SDK 다운로드**
 - [Flutter 설치 페이지](https://docs.flutter.dev/get-started/install) 접속  
@@ -129,7 +129,7 @@ class MyHomePage extends StatelessWidget {
 - VSCode 좌측 디버그 탭(벌레 아이콘) 클릭  
 - 크롬 브라우저 선택해서 실행  
 - 정상적으로 실행되면 브라우저 주소창에 `http://localhost:57158/` 형태로 열림  
-  > 이게 뜨면 성공! 🎉
+  > 이게 뜨면 성공!
 ---
 **8. SDK 재설치 안내**
 

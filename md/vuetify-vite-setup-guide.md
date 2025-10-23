@@ -1,4 +1,4 @@
-# 🎨 Vuetify + Vite 프로젝트 셋업 가이드
+# Vuetify + Vite 프로젝트 셋업 가이드
 
 **1. Node.js 설치**
 - [https://nodejs.org/ko/download]

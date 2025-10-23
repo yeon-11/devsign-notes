@@ -21,6 +21,10 @@ h1 {
     margin-bottom: 40px;
 }
 
+li {
+    list-style: none;
+}
+
 
 
 /* 마크다운 카드 레이아웃 */
