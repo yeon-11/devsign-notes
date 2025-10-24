@@ -41,7 +41,7 @@ loadSectionsParallel();
 
 
 
-// ========== 아코디언 닫기 버튼 기능 (모바일 포함) ==========
+// ========== 아코디언 닫기 버튼 (모바일 포함) ==========
 document.addEventListener("click", (e) => {
   const btn = e.target.closest('[data-close="true"]');
   if (!btn) return;
@@ -49,24 +49,58 @@ document.addEventListener("click", (e) => {
   const collapse = btn.closest(".accordion-collapse");
   if (!collapse) return;
 
-  const instance = bootstrap.Collapse.getOrCreateInstance(collapse, {
-    toggle: false,
-  });
+  // 부트스트랩 인스턴스
+  const instance = bootstrap.Collapse.getOrCreateInstance(collapse, { toggle: false });
 
-  // 닫기 실행
-  instance.hide();
+  // 스크롤 함수 (견고 버전)
+  const scrollToTopRobust = () => {
+    const html = document.documentElement;
+    const body = document.body;
+    const scroller = document.scrollingElement || html; // iOS에서 body가 아닌 경우가 있어요
 
-  // 모바일 Safari 대응: 닫힘 애니메이션 종료 후 스크롤
-  const scrollToTop = () => {
-    // 첫 번째는 smooth, 안 먹히면 두 번째로 강제
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    setTimeout(() => window.scrollTo(0, 0), 400);
+    // 1) CSS smooth 비활성화(전역에 smooth가 걸려있으면 간섭)
+    const styleTag = document.createElement("style");
+    styleTag.id = "tmp-disable-smooth";
+    styleTag.textContent = "html{scroll-behavior:auto!important}";
+    document.head.appendChild(styleTag);
+
+    // 2) 한 프레임 쉬고 시도 (트랜지션 후 레이아웃 안정화)
+    requestAnimationFrame(() => {
+      // 2-1) 정상 브라우저: 부드럽게 시도
+      try { window.scrollTo({ top: 0, behavior: "smooth" }); } catch (_) {}
+
+      // 2-2) iOS 대비: 즉시 강제 세트 (여러 경로 모두 때림)
+      setTimeout(() => {
+        scroller.scrollTop = 0;
+        html.scrollTop = 0;
+        body.scrollTop = 0;
+        window.scrollTo(0, 0);
+
+        // 2-3) 혹시 툴바/주소창 애니메이션 간섭 시 한 번 더
+        setTimeout(() => {
+          scroller.scrollTop = 0;
+          window.scrollTo(0, 0);
+
+          // 임시 스타일 제거
+          const t = document.getElementById("tmp-disable-smooth");
+          if (t) t.remove();
+        }, 120);
+      }, 40);
+    });
   };
 
-  collapse.addEventListener("hidden.bs.collapse", () => {
-    // collapse 애니메이션이 끝나도 레이아웃 반영이 약간 늦어서 지연
-    setTimeout(scrollToTop, 100);
-  }, { once: true });
+  // 닫힘 애니메이션 "완료" 후 스크롤 (여기서 바로 호출하면 iOS에서 종종 무시됨)
+  collapse.addEventListener(
+    "hidden.bs.collapse",
+    () => {
+      // 트랜지션 끝난 직후도 iOS가 무시할 때가 있어 1프레임 유예
+      requestAnimationFrame(scrollToTopRobust);
+    },
+    { once: true }
+  );
+
+  // 섹션 닫기 시작
+  instance.hide();
 });
 
 
