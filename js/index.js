@@ -41,7 +41,7 @@ loadSectionsParallel();
 
 
 
-// ========== 아코디언 닫기 버튼 ==========
+// ========== 아코디언 닫기 버튼 기능 (모바일 포함) ==========
 document.addEventListener("click", (e) => {
   const btn = e.target.closest('[data-close="true"]');
   if (!btn) return;
@@ -53,11 +53,17 @@ document.addEventListener("click", (e) => {
     toggle: false,
   });
 
+  // 애니메이션 완료 후 스크롤
+  collapse.addEventListener(
+    "hidden.bs.collapse",
+    () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    { once: true } // 한 번만 실행
+  );
+
   // 닫기 실행
   instance.hide();
-
-  // 부드럽게 페이지 맨 위로 이동
-  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 
