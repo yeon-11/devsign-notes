@@ -53,17 +53,20 @@ document.addEventListener("click", (e) => {
     toggle: false,
   });
 
-  // 애니메이션 완료 후 스크롤
-  collapse.addEventListener(
-    "hidden.bs.collapse",
-    () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    },
-    { once: true } // 한 번만 실행
-  );
-
   // 닫기 실행
   instance.hide();
+
+  // 모바일 Safari 대응: 닫힘 애니메이션 종료 후 스크롤
+  const scrollToTop = () => {
+    // 첫 번째는 smooth, 안 먹히면 두 번째로 강제
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => window.scrollTo(0, 0), 400);
+  };
+
+  collapse.addEventListener("hidden.bs.collapse", () => {
+    // collapse 애니메이션이 끝나도 레이아웃 반영이 약간 늦어서 지연
+    setTimeout(scrollToTop, 100);
+  }, { once: true });
 });
 
 
