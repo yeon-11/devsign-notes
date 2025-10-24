@@ -1,4 +1,4 @@
-//  아코디언 섹션 불러오기
+// ========== 아코디언 섹션 불러오기 ========== 
 const sections = [
   "photoshop.html",
   "illustrator.html",
@@ -40,7 +40,29 @@ async function loadSectionsParallel() {
 loadSectionsParallel();
 
 
-//  마크다운 카드 데이터
+
+// ========== 아코디언 닫기 버튼 ==========
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest('[data-close="true"]');
+  if (!btn) return;
+
+  const collapse = btn.closest(".accordion-collapse");
+  if (!collapse) return;
+
+  const instance = bootstrap.Collapse.getOrCreateInstance(collapse, {
+    toggle: false,
+  });
+
+  // 닫기 실행
+  instance.hide();
+
+  // 부드럽게 페이지 맨 위로 이동
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+
+// ========== 마크다운 카드 데이터 ========== 
 const guides = [
   {
     title: "Vuetify + Vite",
@@ -143,7 +165,9 @@ async function loadMarkdown(file, title) {
   }
 }
 
-// 공용: HTML 모달 열기
+
+
+// ========== HTML 모달 열기 ========== 
 function openHtmlModal({ file, title = "문서 보기" }) {
   const iframe = document.getElementById("html-viewer");
   const label = document.getElementById("htmlModalLabel");
@@ -179,7 +203,8 @@ document.addEventListener("click", (e) => {
 });
 
 
-// 탑 버튼 기능
+
+// ========== 탑 버튼 기능 ========== 
 const topButton = document.createElement("button");
 topButton.className = "btn position-fixed border-0 bg-transparent";
 topButton.style.bottom = "20px";
